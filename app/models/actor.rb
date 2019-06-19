@@ -16,7 +16,7 @@ class Actor < ActiveRecord::Base
     end
     sho = self.shows.collect do |show|
       show.name
-    
+    list = char.concat sho
     char.concat 
     
     a = [ 1, 2, 3 ]
