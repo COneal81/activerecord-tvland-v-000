@@ -16,7 +16,7 @@ class Actor < ActiveRecord::Base
     sho = self.shows.collect do |show|
       show.name
     
-    characters.select(:name) - shows.select(:name)
+    return - shows.select(:name)
      binding.pry
    end
   end
