@@ -16,7 +16,7 @@ class Actor < ActiveRecord::Base
     list = character_array.concat show_array 
     lists << list.join(" - ")
              
-   binding.pry
+  # binding.pry
   end
   
 end
