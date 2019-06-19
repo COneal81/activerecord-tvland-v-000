@@ -10,6 +10,7 @@ class Actor < ActiveRecord::Base
   
   def list_roles
     roles = []
+    character_array = 
     
     # binding.pry
   end
