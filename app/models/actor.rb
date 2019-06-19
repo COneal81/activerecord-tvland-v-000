@@ -16,7 +16,7 @@ class Actor < ActiveRecord::Base
     sho = self.shows.collect do |show|
       show.name
     
-    return "#{char} - #{sho}"
+    char.concat 
     # binding.pry
    end
   end
