@@ -10,7 +10,7 @@ class Actor < ActiveRecord::Base
   
   
   def list_roles
-    characters.select(:name) - 
+    characters.select(:name) - shows.select(:name)
     binding.pry
   end
   
