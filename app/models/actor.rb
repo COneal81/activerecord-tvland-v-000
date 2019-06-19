@@ -10,11 +10,11 @@ class Actor < ActiveRecord::Base
   
   
   def list_roles
-    list = []
-    char = self.characters.collect do |character|
+    lists = []
+    character_array = self.characters.collect { |character|}
       character.name
-    end
-    sho = self.shows.collect do |show|
+    
+    show_array = self.shows.collect do |show|
       show.name
     list = char.concat sho
     char.concat 
