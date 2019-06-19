@@ -15,6 +15,7 @@ class Actor < ActiveRecord::Base
     
     characters.select(:name) - shows.select(:name)
      binding.pry
+   end
   end
   
 end
