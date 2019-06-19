@@ -10,6 +10,7 @@ class Actor < ActiveRecord::Base
   
   
   def list_roles
+    list = []
     char = self.characters.collect do |character|
       character.name
     end
@@ -17,6 +18,10 @@ class Actor < ActiveRecord::Base
       show.name
     
     char.concat 
+    
+    a = [ 1, 2, 3 ]
+a.concat( [ 4, 5 ] )
+a                     
     # binding.pry
    end
   end
