@@ -6,7 +6,7 @@ class Character < ActiveRecord::Base
   belongs_to :network
   
   def say_that_thing_you_say
-    puts "#{self.name}. #{self.catchphrase}"
+    return "#{self.name} always says: #{self.catchphrase}"
     # binding.pry 
   end 
   
