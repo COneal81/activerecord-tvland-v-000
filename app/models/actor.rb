@@ -17,7 +17,6 @@ class Actor < ActiveRecord::Base
     lists << list.join(" - ")
              
    binding.pry
-   end
   end
   
 end
