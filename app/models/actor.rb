@@ -10,6 +10,7 @@ class Actor < ActiveRecord::Base
   
   
   def list_roles
+    characters.select(:name).distinct
     binding.pry
   end
   
