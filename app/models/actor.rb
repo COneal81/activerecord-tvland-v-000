@@ -11,7 +11,7 @@ class Actor < ActiveRecord::Base
   def list_roles
     roles = []
     
-    binding.pry
+    # binding.pry
   end
 end
 
